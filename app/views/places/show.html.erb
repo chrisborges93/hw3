@@ -5,11 +5,14 @@
 <ul>
   <% @place.entries.each do |entry| %>
     <li>
-      <strong><%= entry.title %></strong> - <%= entry.occurred_on %>
+      <strong><%= entry.title %></strong> <br>
+      <em><%= entry.occurred_on %></em> <br>
       <p><%= entry.description %></p>
+      
     </li>
   <% end %>
 </ul>
+
 
 <p>
   <a href="/places">Back to Places</a> |
