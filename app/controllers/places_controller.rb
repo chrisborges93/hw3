@@ -2,7 +2,7 @@ class PlacesController < ApplicationController
 
   def index
     
-    @place = Place.find(params[:id])
+    @places = Place.all
 
     render :template => "places/index"
   end
